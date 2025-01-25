@@ -22,6 +22,8 @@ CREATE TABLE items (
     member_id VARCHAR(255) NOT NULL,
     quantity INT NOT NULL DEFAULT 0,
     category VARCHAR(100) NOT NULL,
+    description TEXT,
+    image_url TEXT,
     status TINYINT NOT NULL, 
     FOREIGN KEY (member_id) REFERENCES member(member_id) ON DELETE CASCADE
 );
