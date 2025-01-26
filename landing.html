@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoThrift - Sustainable Student Sharing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        /* Colors and Variables */
+        :root {
+            --primary-green: #A1B78B; /* Elegant, muted green */
+            --primary-light-green: #C8D7A6; /* Light and airy green */
+            --background-gray: #F9F9F9; /* Soft gray background */
+            --text-dark-green: #2C6A4F; /* Dark Green for text */
+            --accent-color: #E0C097; /* Warm beige for accents */
+            --hover-color: #D1B386; /* Darker beige for hover effects */
+            --card-shadow: rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 4rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-light-green));
+            color: white;
+            text-align: center;
+            padding: 7rem 2rem;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        .hero button {
+            background: var(--accent-color);
+            color: var(--text-dark-green);
+            border: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .hero button:hover {
+            background: var(--hover-color);
+            transform: translateY(-5px);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            padding: 6rem 2rem;
+            background: var(--background-gray);
+        }
+
+        .feature {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px var(--card-shadow);
+            padding: 3rem;
+            text-align: center;
+            width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature h3 {
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .feature p {
+            color: var(--text-dark-green);
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px var(--card-shadow);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-green);
+            color: white;
+            text-align: center;
+            padding: 3rem;
+            box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/Screenshot%202025-01-25%20at%203.42.21%E2%80%AFPM.png" alt="CoThrift Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to CoThrift</h1>
+        <p>Connecting students to share and recycle items sustainably, saving money and reducing waste.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Share Items</h3>
+            <p>Easily list items you no longer need and help others save money.</p>
+        </div>
+        <div class="feature">
+            <h3>Find What You Need</h3>
+            <p>Browse items available from other students around campus.</p>
+        </div>
+        <div class="feature">
+            <h3>Go Green</h3>
+            <p>Reduce waste and promote sustainability in your community.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CoThrift. All rights reserved.</p>
+    </footer>
+</body>
+</html>
